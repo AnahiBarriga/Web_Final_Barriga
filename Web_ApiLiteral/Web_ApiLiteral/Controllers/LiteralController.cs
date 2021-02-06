@@ -15,7 +15,7 @@ namespace Web_ApiLiteral.Controllers
         public string NumeroGet(string num1)
         {
             string respuesta = ""; //1.568.768
-            if (num1.Length > 7)
+            if (num1.Length >7)
             { return "Numero muy grande"; }
             if (num1.Length == 0)
             {
@@ -133,7 +133,7 @@ namespace Web_ApiLiteral.Controllers
                 respuesta += Unidad(num1[0]);
             }
             if (num1.Length == 1 && num1 == "0")
-                return "cerooooooooooooo XD memes loayza";
+                return "Cero";
 
 
             return respuesta;
