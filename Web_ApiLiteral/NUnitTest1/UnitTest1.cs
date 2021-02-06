@@ -79,8 +79,8 @@ namespace NUnitTest1
         public void TestssssNumeroGet()
         {
             //Arrange=Preparacion
-            string num1 = "6";
-            string esperado = "Seis";
+            string num1 = "10";
+            string esperado = "Diez";
 
             LiteralController lit = new LiteralController();
             //Act=Ejecucion
@@ -95,8 +95,8 @@ namespace NUnitTest1
         public void TestssNumeroPost()
         {
             //Arrange=Preparacion
-            string num1 = "6";
-            string esperado = "Seis";
+            string num1 = "10";
+            string esperado = "Diez";
 
             LiteralController lit = new LiteralController();
             //Act=Ejecucion
@@ -106,6 +106,39 @@ namespace NUnitTest1
             Assert.AreEqual(esperado, resultado);
 
         }
+
+        [Test]
+        public void TTTestssssNumeroGet()
+        {
+            //Arrange=Preparacion
+            string num1 = "3";
+            string esperado = "Tres";
+
+            LiteralController lit = new LiteralController();
+            //Act=Ejecucion
+            string resultado = lit.NumeroGet(num1);
+
+            //Assert=Verificacion
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
+        [Test]
+        public void TTestssNumeroPost()
+        {
+            //Arrange=Preparacion
+            string num1 = "3";
+            string esperado = "Tres";
+
+            LiteralController lit = new LiteralController();
+            //Act=Ejecucion
+            string resultado = lit.NumeroGet(num1);
+
+            //Assert=Verificacion
+            Assert.AreEqual(esperado, resultado);
+
+        }
+
 
 
 
